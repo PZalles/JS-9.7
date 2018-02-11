@@ -75,6 +75,10 @@ function playerPick(playerPick) {
 
     playerPickElem.innerHTML = playerPick;
     computerPickElem.innerHTML = computerPick;
+	
+	checkRoundWinner(playerPick, computerPick);
+	
+	setGamePoints();
 }
 
 function checkRoundWinner(playerPick, computerPick) {
@@ -100,17 +104,6 @@ function checkRoundWinner(playerPick, computerPick) {
         computer.score++;
     }
 
-}
-
-function playerPick(playerPick) {
-    var computerPick = getComputerPick();
-
-    playerPickElem.innerHTML = playerPick;
-    computerPickElem.innerHTML = computerPick;
-
-    checkRoundWinner(playerPick, computerPick);
-
-    setGamePoints();
 }
 
 function setGamePoints() {
