@@ -58,10 +58,6 @@ function newGame() {
 
 }
 
-function playerPick(playerPick) {
-    console.log(playerPick);
-}
-
 Math.floor(Math.random()*3)
 
 function getComputerPick() {
