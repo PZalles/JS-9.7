@@ -109,7 +109,7 @@ function checkRoundWinner(playerPick, computerPick) {
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
     computerPointsElem.innerHTML = computer.score;
-	setTimeout(checkGameEnd, 0);
+	checkGameEnd();
 
 }
 
